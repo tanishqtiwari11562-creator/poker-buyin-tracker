@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Poker Buy-In Tracker</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 p-4">
+  <div class="container">
+    <h1 class="title">Poker Buy-In Tracker</h1>
+
+    <div class="card add-player">
+      <input id="playerName" placeholder="Player name" class="input" />
+      <button id="addPlayerBtn" class="btn primary">Add Player</button>
+    </div>
+
+    <div class="card totals">
+      <div class="row space">
+        <div>
+          <div class="label">Money in play</div>
+          <div id="moneyInPlay" class="big">₹0</div>
+        </div>
+        <div>
+          <div class="label">Bank value</div>
+          <div id="bankValue" class="big">₹0</div>
+        </div>
+      </div>
+      <div class="chip-row">
+        <div class="chip"><div class="chip-label">White<br/>₹10</div><div id="chipWhite">0</div></div>
+        <div class="chip"><div class="chip-label">Red<br/>₹20</div><div id="chipRed">0</div></div>
+        <div class="chip"><div class="chip-label">Green<br/>₹30</div><div id="chipGreen">0</div></div>
+        <div class="chip"><div class="chip-label">Blue<br/>₹50</div><div id="chipBlue">0</div></div>
+      </div>
+    </div>
+
+    <div id="playersList"></div>
+
+    <div class="row gap">
+      <button id="roundReset" class="btn warn">Round Reset</button>
+      <button id="fullReset" class="btn danger">Full Reset</button>
+    </div>
+
+    <div style="height:80px"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

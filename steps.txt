@@ -1,0 +1,11 @@
+Simple steps (super easy) to get a live link on Render:
+
+1) Unzip the ZIP and open the folder.
+2) Create a new GitHub repo and push all files there (or upload via GitHub web UI).
+3) On Render.com create a new Postgres database (name anything) and copy the DATABASE_URL.
+4) On Render create a new Web Service, connect your GitHub repo.
+   - Build command: npm install
+   - Start command: npm start
+   - Add environment variable: DATABASE_URL = (paste DB URL)
+5) Click Create and wait. The app will auto-create tables and be live.
+6) Visit the Render URL it gives you (that's your shareable link).
